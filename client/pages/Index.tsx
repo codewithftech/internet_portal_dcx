@@ -8,6 +8,7 @@ import Documents from "@/components/widgets/Documents";
 import UpcomingEvents from "@/components/widgets/UpcomingEvents";
 import PendingApprovals from "@/components/widgets/PendingApprovals";
 import Announcements from "@/components/widgets/Announcements";
+import HeaderIntranet from "@/components/Navigation/HeaderIntranet";
 
 export default function Index() {
   return (
@@ -23,17 +24,15 @@ export default function Index() {
       </div>
 
       <div className="relative z-10 overflow-x-hidden">
-        <Header />
+        {/* <Header /> */}
+        <HeaderIntranet />
 
-        <main className="pt-16 lg:pt-[72px] min-h-[calc(100vh-64px)] lg:min-h-[calc(100vh-72px)]">
-          <PageHeader title="Homepage" />
-
+        <main className=" ">
+          <PageHeader title="Ahmed Radwan" />
+          <QuickAccessCarousel />
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5">
             {/* Quick Access Carousel */}
-            <div className="mb-8">
-              <QuickAccessCarousel />
-            </div>
 
             {/* Widgets Grid - Row 1 */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[692px_338px_338px] gap-4 mb-4 justify-center">
