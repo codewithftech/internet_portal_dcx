@@ -31,14 +31,14 @@ export default function Index() {
           <PageHeader title="Ahmed Radwan" />
           <QuickAccessCarousel />
           {/* Content Container */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5">
+          <div className="relative z-10 w-full px-5">
             {/* Quick Access Carousel */}
 
             {/* Widgets Grid - Row 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[692px_338px_338px] gap-4 mb-4 justify-center">
+            <div className="flex flex-col lg:flex-row gap-4 mb-4 w-full">
+              <PersonalData />
               <RecentNews />
               <EmployeeRoaster />
-              <PersonalData />
             </div>
 
             {/* Widgets Grid - Row 2 */}
