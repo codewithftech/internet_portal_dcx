@@ -301,8 +301,8 @@ export default function QuickAccessCarousel() {
   }, []);
 
   return (
-    <div className="w-full px-[66px] -mt-[30px] pb-[30px]">
-      <div className="relative px-[73px]">
+    <div className="w-full  -mt-[30px] pb-[30px] max-w-[1194px] mx-auto">
+      <div className="relative px-[16px]">
         <button
           type="button"
           onClick={goPrev}
