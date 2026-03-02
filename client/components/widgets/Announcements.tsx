@@ -26,22 +26,22 @@ const announcements = [
 
 export default function Announcements() {
   return (
-    <div className="w-full max-w-[338px] rounded-[20px] bg-white/90 shadow-[0_24px_32px_0_rgba(18,12,55,0.08)] backdrop-blur-[12px] overflow-hidden p-6">
+    <div className="w-full  rounded-[20px] bg-white/90 shadow-[0_24px_32px_0_rgba(18,12,55,0.08)] backdrop-blur-[12px] overflow-hidden p-6">
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center gap-2.5">
-          <Volume2 className="w-6 h-6 text-[#7A60A9]" strokeWidth={1.7} />
-          <h3 className="text-lg font-bold text-gray-900">
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-[2.5px]">
+          <Volume2 className="w-[22.49px] h-[22.49px] text-[#7A60A9]" strokeWidth={1.7} />
+          <h3 className="text-lg font-bold leading-[100%] text-gray-900">
             Announcements
           </h3>
         </div>
-        <button className="px-4 py-2 rounded-full bg-[#7A60A9]/10 text-[#7A60A9] text-sm font-semibold hover:bg-[#7A60A9]/20 transition-colors">
+        <button className="px-3 py-2 rounded-full bg-[#7A60A9]/10 text-[#7A60A9] text-sm font-bold leading-6">
           See All
         </button>
       </div>
 
       {/* Announcements List */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {announcements.map((announcement, index) => {
           const Icon = announcement.icon;
           return (
@@ -51,11 +51,9 @@ export default function Announcements() {
             >
               {/* Icon Circle */}
               <div 
-                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: announcement.iconBg }}
               >
                 <Icon 
-                  className="w-5 h-5" 
+                  className="w-6 h-6" 
                   style={{ color: announcement.iconColor }} 
                   strokeWidth={2} 
                 />
@@ -63,10 +61,10 @@ export default function Announcements() {
               
               {/* Content */}
               <div className="flex-1 flex flex-col gap-2">
-                <h4 className="text-base font-semibold text-gray-900 leading-snug">
+                <h4 className="text-base font-medium text-[#4F4F4F] leading-snug">
                   {announcement.title}
                 </h4>
-                <span className="text-sm text-gray-500">
+                <span className="text-xs font-medium text-gray-500">
                   {announcement.date}
                 </span>
               </div>
