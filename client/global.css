@@ -19,6 +19,8 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
+    --color-brand-purple: #60498c;
+
     --background: 245 9% 95%;
     --foreground: 0 0% 31%;
 
